@@ -1,0 +1,115 @@
+@import url('http://fonts.cdnfonts.com/css/zelda-dx');
+
+                
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Zelda DX TT (BRK)', sans-serif;
+                                                
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #a0a;
+    position: relative;
+}
+nav{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: auto;
+    height: 40px;
+    padding: 5px 10px;
+    background: #c0c0c0;
+    border: solid #0c0c0c 1px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -2px;
+}
+nav ul li:hover {
+    background: #0c0c0c;
+    border: #c0c0c0 solid 1px;
+}
+nav ul li:hover a{
+    color: #c0c0c0;
+}
+main{
+    background: #c0c0c0;
+    padding: 20px;
+    border-radius: 10px;
+    border: #0c0c0c solid 2px;
+}
+main .table{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+main .table .card{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 5px 10px;
+    position: relative;
+    /* z-index: 0; */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    transform: rotateY( 180deg );
+}
+main .table .card::before{
+    content: '';
+    background: url(../media/back.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    /* z-index: 1; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateY( 180deg );
+    transition: all 0.5s ease;
+}
+.Active{
+    box-shadow: 2px 2px 5px green;
+    /* z-index: 1 !important; */
+    transform: rotateY( -180deg ) !important;
+    transition: all 0.5s ease !important;
+}
+.Active::before{
+    /* z-index: 0 !important; */
+    background: none !important;
+    transform: rotateY( -180deg ) !important;
+    transition: all 0.5s ease !important;
+}
+.Find{
+    filter: grayscale(1);
+}
+/* main .table .card:hover{
+    z-index: 1;
+} */
+/* main .table .card:hover::before{
+    z-index: 0;
+    background: none;
+} */

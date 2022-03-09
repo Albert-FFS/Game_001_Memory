@@ -1,0 +1,1 @@
+const card = 1;
