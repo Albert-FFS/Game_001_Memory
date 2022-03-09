@@ -1,7 +1,7 @@
 //Variables 
 const table = document.querySelector('.table');
 const info = document.querySelector('.info');
-const ImagePath ="url(/media/face.webp)";
+const ImagePath ="url(https://github.com/Albert-FFS/Game_001_Memory/tree/master/src/media/face.webp)";
 const Image = [
     {num:'0',   x:'-0px',    y:'-0px',    title:'Broken Bigoron Sword'},
     {num:'1',   x:'-100px',  y:'-0px',    title:'Bow'},
@@ -18,10 +18,10 @@ const Image = [
 ];
 let st;
 const soundsEffect =[
-    {path:'/media/zelda_navi_listen.mp3'},
-    {path:'/media/zelda_secret.mp3'},
-    {path:'/media/pokemon_snap_wrong.mp3'},
-    {path:'/media/zelda_win.mp3'}
+    {path:'https://github.com/Albert-FFS/Game_001_Memory/tree/master/src/media/zelda_navi_listen.mp3'},
+    {path:'https://github.com/Albert-FFS/Game_001_Memory/tree/master/src/media/zelda_secret.mp3'},
+    {path:'https://github.com/Albert-FFS/Game_001_Memory/tree/master/src/media/pokemon_snap_wrong.mp3'},
+    {path:'https://github.com/Albert-FFS/Game_001_Memory/tree/master/src/media/zelda_win.mp3'}
 ];
 const audio = document.querySelector('audio');
 //Game Engine

@@ -79,7 +79,7 @@ main .table .card{
 }
 main .table .card::before{
     content: '';
-    background: url(/src/media/back.png);
+    background: url(https://github.com/Albert-FFS/Game_001_Memory/tree/master/src/media/back.png);
     background-size: cover;
     width: 100px;
     height: 100px;
